@@ -56,63 +56,90 @@ function greetFirst(names) {
 }
 console.log('Exercise 5 Result:', greetFirst(['Alice', 'Bob']));
 
-// // Exercise 6: sumFirstTwo()
-// // Define a function that returns the sum of the first two elements of a number array.
-// // Example: sumFirstTwo([5, 10, 15]) returns 15
-// function sumFirstTwo(numbers) {
-// }
-// console.log('Exercise 6 Result:', sumFirstTwo([5, 10, 15]));
+// Exercise 6: sumFirstTwo()
+// Define a function that returns the sum of the first two elements of a number array.
+// Example: sumFirstTwo([5, 10, 15]) returns 15
+function sumFirstTwo(numbers) {
+  return numbers[0] + numbers[1]
+}
+console.log('Exercise 6 Result:', sumFirstTwo([5, 10, 15]));
 
-// // Exercise 7: containsValue()
-// // Define a function that checks if an array contains a specific value using includes().
-// // Example: containsValue(['cat', 'dog'], 'dog') returns true
-// function containsValue(arr, value) {
-// }
-// console.log('Exercise 7 Result:', containsValue(['cat', 'dog'], 'dog'));
+// Exercise 7: containsValue()
+// Define a function that checks if an array contains a specific value using includes().
+// Example: containsValue(['cat', 'dog'], 'dog') returns true
+function containsValue(arr, value) {
+  return arr.includes(value);
+}
+console.log('Exercise 7 Result:', containsValue(['cat', 'dog'], 'dog'));
 
-// // Exercise 8: joinNames()
-// // Define a function that joins an array of names with ', ' and returns the string.
-// // Example: joinNames(['Sam', 'Alex']) returns 'Sam, Alex'
-// function joinNames(names) {
-// }
-// console.log('Exercise 8 Result:', joinNames(['Sam', 'Alex']));
+// Exercise 8: joinNames()
+// Define a function that joins an array of names with ', ' and returns the string.
+// Example: joinNames(['Sam', 'Alex']) returns 'Sam, Alex'
+function joinNames(names) {
+  return names.join(', ');
+}
+console.log('Exercise 8 Result:', joinNames(['Sam', 'Alex']));
 
-// // Exercise 9: getLastIndex()
-// // Define a function that returns the index of the last element in an array.
-// // Example: getLastIndex(['a', 'b', 'c']) returns 2
-// function getLastIndex(arr) {
-// }
-// console.log('Exercise 9 Result:', getLastIndex(['a', 'b', 'c']));
+// Exercise 9: getLastIndex()
+// Define a function that returns the index of the last element in an array.
+// Example: getLastIndex(['a', 'b', 'c']) returns 2
+function getLastIndex(arr) {
+  return arr[arr.length-1];
+}
+console.log('Exercise 9 Result:', getLastIndex(['a', 'b', 'c']));
 
-// // Exercise 10: removeFirst()
-// // Define a function that removes the first element of an array and returns the array.
-// // Example: removeFirst([1, 2, 3]) returns [2, 3]
-// function removeFirst(arr) {
-// }
-// console.log('Exercise 10 Result:', removeFirst([1, 2, 3]));
+// Exercise 10: removeFirst()
+// Define a function that removes the first element of an array and returns the array.
+// Example: removeFirst([1, 2, 3]) returns [2, 3
+
+function removeFirst(arr) {
+  arr.shift();
+  return arr;
+}
+console.log('Exercise 10 Result:', removeFirst([1, 2, 3]));
 
 // // === Intermediate Exercises (11-20) ===
 
-// // Exercise 11: doubleNumbers()
-// // Define a function that doubles each number in an array using forEach() and returns the new array.
-// // Example: doubleNumbers([1, 2, 3]) returns [2, 4, 6]
-// function doubleNumbers(numbers) {
-// }
-// console.log('Exercise 11 Result:', doubleNumbers([1, 2, 3]));
+// Exercise 11: doubleNumbers()
+// Define a function that doubles each number in an array using forEach() and returns the new array.
+// Example: doubleNumbers([1, 2, 3]) returns [2, 4, 6]
 
-// // Exercise 12: filterShortWords()
-// // Define a function that filters words shorter than 4 characters from an array.
-// // Example: filterShortWords(['cat', 'tiger', 'dog']) returns ['tiger']
-// function filterShortWords(words) {
-// }
-// console.log('Exercise 12 Result:', filterShortWords(['cat', 'tiger', 'dog']));
+let doublenums = [];
 
-// // Exercise 13: addPrefix()
-// // Define a function that adds a prefix to each string in an array and returns the new array.
-// // Example: addPrefix(['dog', 'cat'], 'pet-') returns ['pet-dog', 'pet-cat']
-// function addPrefix(arr, prefix) {
-// }
-// console.log('Exercise 13 Result:', addPrefix(['dog', 'cat'], 'pet-'));
+function doubleNumbers(numbers) {
+
+}
+console.log('Exercise 11 Result:', doubleNumbers([1, 2, 3]));
+
+// Exercise 12: filterShortWords()
+// Define a function that filters words shorter than 4 characters from an array.
+// Example: filterShortWords(['cat', 'tiger', 'dog']) returns ['tiger']
+
+let bigWords = [];
+function filterShortWords(words) {
+  // loop through the array 
+  for(let i = 0; i < words.length; i++){
+    // for each index(string) if the string > 4 
+    if(words[i].length > 4){
+      // add the index of words that > 4 to the end of the array bigWords
+      bigWords.push(words[i]);
+      // console.log(bigWords);
+    }
+  }
+  return bigWords;
+}
+console.log('Exercise 12 Result:', filterShortWords(['cat', 'tiger', 'dog']));
+
+// Exercise 13: addPrefix()
+// Define a function that adds a prefix to each string in an array and returns the new array.
+// Example: addPrefix(['dog', 'cat'], 'pet-') returns ['pet-dog', 'pet-cat']
+function addPrefix(arr, prefix) {
+  // loop to iterate through the array
+
+
+  // maybe a join to add the prefix?
+}
+console.log('Exercise 13 Result:', addPrefix(['dog', 'cat'], 'pet-'));
 
 // // Exercise 14: countEvens()
 // // Define a function that counts even numbers in an array using a for...of loop.
